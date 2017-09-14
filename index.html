@@ -2,8 +2,23 @@
 <html>
   <head>
     <title>Monthly Calendar Generator</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
   </head>  
   <body>
-    <h1>Monthly Calendar - First Commit</h1>
+    <h1>Monthly Calendar</h1>
+    <form class="pure-form pure-form-stacked form-create" onsubmit="return crearCalendario(this)">
+        <fieldset>
+            <input type="date" name="date" placeholder="Fecha Inicio" required/>
+            <input type="number" name="number-days" placeholder="Número de días" required/>
+            <input type="text" name="country-code"  placeholder="Código País" required/>
+            
+            <button type="submit" class="pure-button pure-button-primary">Crear</button>
+
+        </fieldset>
+    </form>
+    <div id="calendar-container"></div>
+    <script src="js/MonthyCalendar.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>

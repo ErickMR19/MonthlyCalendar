@@ -1,0 +1,47 @@
+.month {
+    border: 1px solid black;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 50px;
+    max-width: 400px;
+}
+
+.week {
+    display: flex;
+}
+
+.week .day {
+    flex: 1;
+    margin: 1px;
+    text-align: center;
+    padding: 20px 0;
+    background-color: greenyellow;
+    color: blue;
+}
+
+.week .day:last-of-type, .week .day:first-of-type {
+    background-color: yellow;
+    color: black;
+}
+
+.week .day.holiday {
+    background-color: orange;
+}
+
+.week .day.empty {
+    background-color: grey;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-create {
+    width: 280px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form-create input {
+    width: 280px;
+}
